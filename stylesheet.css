@@ -1,0 +1,296 @@
+body{
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+.top-wrapper{
+  background-image: url(img/main.png);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  padding-top: 30px;
+}
+
+header img{
+  height: 60px;
+  width: 140px;
+}
+header img:hover{
+  opacity: 0.7;
+}
+header ul{
+  margin-left: auto;
+  display: flex;
+  list-style: none;
+}
+
+.menu-bar{
+  display: none;
+}
+
+header ul li{
+  margin-right: 64px;
+}
+
+header ul li:hover{
+  opacity: 0.7; 
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.top-wrapper h1{
+  text-align: center;
+  margin-top: 300px;
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.news-wrapper h1{
+  text-align: center;
+  margin-top: 100px;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.news{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news ul{
+  list-style: none;
+}
+
+.news ul li{
+  padding: 30px;
+  border-bottom: 1px solid black;
+}
+
+.news ul li a:hover{
+  opacity: 0.7;
+}
+
+.news ul li span{
+  padding: 5px;
+  border: 1px solid black;
+  font-size: 12px;
+  margin: 0 20px;
+}
+
+.news-wrapper ul li br{
+  display: none;
+}
+
+.case-wrapper{
+  text-align: center;
+}
+
+.case-wrapper h1{
+  font-weight: normal;
+  font-size: 36px; 
+  margin: 100px 0;
+}
+
+.cases{
+  display: flex;
+  justify-content: center;
+}
+
+.case{
+  margin:  0 auto;
+  width: 50%;
+}
+
+.case img{
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.case h2{
+  font-weight: normal;
+}
+
+.case a img{
+  height: 64px;
+}
+.case-wrapper .container > p{
+  margin: 100px 0;
+}
+
+.case-wrapper .container p a{
+  font-size: 20px;
+  padding: 8px 18px;
+  border: 1px solid black;
+}
+.case-wrapper .container > p a:hover{
+  opacity: 0.7;
+}
+
+.links{
+  width: 100%;
+}
+
+.links ul{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.links ul li{
+  line-height: 0;
+}
+
+.links img{
+  width: calc(100% - 0px);
+}
+
+footer{
+  background-color: rgb(0, 0, 0);
+  height: 150px;
+}
+
+.footer-top{
+  padding-top: 20px;
+  display: flex;
+}
+
+.footer-top ul {
+  margin-left: auto; 
+  list-style: none;
+  display: flex;
+}
+.footer-top ul li a{
+  color: white;
+  margin-right: 32px;
+}
+
+.footer-top img{
+  width: 95px;
+  height: 40px;
+}
+
+footer p{
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  align-self: flex-end;
+  margin-top: 50px;
+}
+
+footer a:hover{
+  opacity: 0.7;
+}
+
+
+@media(max-width:960px){
+  .top-wrapper{
+    height: 485px;
+  }
+
+  header ul{
+    display: none;
+  }
+
+  .menu-bar{
+    display: block;
+    margin-left: auto;
+  }
+
+  .menu-bar img{
+    width: 20px;
+    height: 15px;
+    margin-right: 16px;
+  }
+
+  .top-wrapper h1{
+    font-size: 24px;
+    margin-top: 150px;
+  }
+
+  .news{
+    width: 100%;
+  }
+
+  .news ul{
+    padding: 0;
+  }
+
+  .news-wrapper h1{
+    font-size: 24px;
+    margin-top: 50px;
+  }
+
+  .news-wrapper ul li br{
+    display: block;
+  }
+
+  .cases{
+    flex-wrap: wrap;
+  }
+
+  .case{
+    width: 100%;
+  }
+
+  .case > img{
+    width: 100%;
+    max-width: 638px;
+    height: auto;
+  }
+
+  .case a img{
+    width: 100%;
+    max-width: 300px;
+    height: 47px;
+    margin-bottom: 48px;
+  }
+
+  .case-wrapper .container > p{
+    margin: 0 0 100px 0;
+  }
+
+  .links ul{
+    flex-direction: column;
+  }
+
+  footer{
+    height: 400px;
+    text-align: center;
+  }
+
+  .footer-top{
+   flex-direction: column-reverse;
+   justify-content: center;
+  }
+
+  .footer-top ul li a{
+    margin: 0;
+
+  }
+  
+  .footer-top img{
+    margin: 16px auto;
+  }
+
+  .footer-top ul{
+    flex-direction: column;
+    margin:0;
+    padding: 0;
+  }
+
+  .footer-top ul li{
+    margin: 16px 0px;
+  }
+  
+}
