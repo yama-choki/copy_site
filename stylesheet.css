@@ -35,11 +35,14 @@ header ul{
 }
 
 header ul li{
-  margin-right: 64px;
+  text-align: center;
+  width: 150px;
 }
 
-header ul li:hover{
-  opacity: 0.7; 
+header ul li:hover{ 
+  font-size: 24px;
+  line-height: 24px;
+  transition: 0.2s;
 }
 
 a{
@@ -48,12 +51,18 @@ a{
 }
 
 
-.top-wrapper h1{
+#title{
   text-align: center;
   margin-top: 300px;
   font-size: 48px;
   font-weight: normal;
+  /* opacity: 0; */
 }
+
+/* .show{
+  transition: 0.4s;
+  opacity: 1;
+} */
 
 .news-wrapper h1{
   text-align: center;
@@ -74,6 +83,7 @@ a{
 .news ul li{
   padding: 30px;
   border-bottom: 1px solid black;
+  line-height: 36px;
 }
 
 .news ul li a:hover{
@@ -104,16 +114,18 @@ a{
 .cases{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 600px;
 }
 
 .case{
-  margin:  0 auto;
-  width: 50%;
+  margin:  0px 10px;
+  width: 40%;
 }
 
 .case img{
-  width: 400px;
-  height: 300px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -123,6 +135,11 @@ a{
 
 .case a img{
   height: 64px;
+  width: 80%;
+}
+
+.case a img:hover{
+  opacity: 0.7;
 }
 .case-wrapper .container > p{
   margin: 100px 0;
@@ -149,10 +166,15 @@ a{
 }
 .links ul li{
   line-height: 0;
+  background-color: darkblue;
 }
 
 .links img{
   width: calc(100% - 0px);
+}
+
+.links img:hover{
+  opacity: 0.7;
 }
 
 footer{
@@ -163,6 +185,7 @@ footer{
 .footer-top{
   padding-top: 20px;
   display: flex;
+  height: 100px;
 }
 
 .footer-top ul {
@@ -172,7 +195,16 @@ footer{
 }
 .footer-top ul li a{
   color: white;
-  margin-right: 32px;
+}
+
+.footer-top ul li a{
+  color: white;
+}
+
+.footer-top ul li{
+  width: 150px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .footer-top img{
@@ -185,12 +217,14 @@ footer p{
   text-align: center;
   font-size: 12px;
   align-self: flex-end;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 footer a:hover{
-  opacity: 0.7;
+  font-size: 24px;
+  transition: 0.2s;
 }
+
 
 
 @media(max-width:960px){
@@ -257,12 +291,12 @@ footer a:hover{
   }
 
   .case-wrapper .container > p{
-    margin: 0 0 100px 0;
+    margin: 100px 0;
   }
 
-  .links ul{
+  /* .links ul{
     flex-direction: column;
-  }
+  } */
 
   footer{
     height: 400px;
@@ -270,27 +304,23 @@ footer a:hover{
   }
 
   .footer-top{
-   flex-direction: column-reverse;
-   justify-content: center;
-  }
-
-  .footer-top ul li a{
-    margin: 0;
-
-  }
-  
-  .footer-top img{
-    margin: 16px auto;
+    flex-direction: column-reverse;
+    height: 350px;
   }
 
   .footer-top ul{
     flex-direction: column;
     margin:0;
     padding: 0;
+    margin: auto;    
   }
 
   .footer-top ul li{
-    margin: 16px 0px;
+    margin: 10px 0;
+    height: 36px;
   }
-  
+
+  .footer-top img{
+    margin: 16px auto;
+  }
 }
